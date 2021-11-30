@@ -1,7 +1,9 @@
-import { useContext, useState } from "react"
+import { useContext } from "react"
 import Switch from "react-switch"
 import { ThemeContext } from "../App"
+
 const Title = ()=>{
+    
     const {theme,setTheme} = useContext(ThemeContext)
 
     const toggleSwitch = (checked) =>{
@@ -9,6 +11,7 @@ const Title = ()=>{
             theme === "light" ? "dark" : "light"
         )
     }
+    
     return(
         <header className={theme==="dark"?"dark":"light"}>
             <span>Mode [{theme}]</span>
