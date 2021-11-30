@@ -8,7 +8,7 @@ const Content = ()=>{
     return(
         <main className={theme==="dark"?"dark":"light"}>
             <div>
-                <h1>KongRuksiam Official</h1>
+                <h1>ONY DOUANGMALA</h1>
                 <p>DarkMode Workshop</p>
             </div>
             <img src={theme==="dark"? dark : light} alt="Logo"/>
@@ -16,4 +16,4 @@ const Content = ()=>{
     )
 }
 
-export default Content
+export default Content;
